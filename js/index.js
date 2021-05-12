@@ -10,8 +10,7 @@ fetch('temp-data.json')
 })
 .then(function (data) {
     appendData(data);
-    appendLocation(data);
-    showPartnerDetails(data);
+  
 })
 .catch(function (err) {
     console.log('error: ' + err);
@@ -19,73 +18,107 @@ fetch('temp-data.json')
 
 
 function appendData(data) {
-var mainContainer = document.getElementById("partners-list");
-for (var i = 0; i < data.length; i++) {
-    var div = document.createElement("div");
+let mainContainer = document.getElementById("partners-list");
+for (let i = 0; i < data.length; i++) {
+    let temp = data[i];
+    let div = document.createElement("div");
     div.innerHTML = 
     `
-        <div class="partner-container">
+        <div class="partner-container" id = ${temp.id} style = "display:flex;">
+
+        <div>
         <span class="partner-name">${data[i].firstName + ' ' + data[i].lastName}</span>
-        <p class="loan-info">${data[i].loanContent}</p>
-        <i class="fas fa-chevron-circle-right"></i>
+        <p class="loan-info">${data[i].loanContent} | ${data[i].mobile}</p>
+       
+        <span class></span>
         <p class="partner-visit">${data[i].visit}</p>
         </div>
-            
+
+        <div>
+        <i class="fas fa-chevron-circle-right icon"></i>
+        </div>
+
+        </div>    
         `
     mainContainer.appendChild(div);
+    document.getElementById(temp.id).onclick = () => {
+        showPartnerDetails(temp);
+        showLocation(temp);
+    }
 }
 }
 
-function appendLocation(data) {
-    var mainContainer = document.getElementById("stops-container");
-    for (var i = 0; i < data.length; i++) {
-        var div = document.createElement("div");
-        div.innerHTML = 
-        `
-        <tr>
-        <td>${data[i]}</td>
-        <td>${data[i].loanContent}</td>
-        <td>${data[i].visit}</td>
-        <td></td>
-        </tr>
-
-            
-                
-            `
-        mainContainer.appendChild(div);
-    }
-    }
 
 function showPartnerDetails(data){
-    let partner = document.querySelectorAll(".partners-list");
-    var details = document.getElementById("partner-details");
-    partner.forEach((elem, idx)=>{
-        elem.addEventListener('click'), ()=>{
+    console.log(data);
+    console.log(data["stop-1"]["lat"]);
+    // let partner = document.querySelectorAll(".partners-list");
+    let details = document.getElementById("partner-detail");
+   
+                        details.innerHTML = 
+                        `
+                        <span class="main-name">PARTNER DETAILS</span>
+                        <div class="partner-details">
+                        <table>
+                            <tr>
+                                <th class="table-name">NAME</th>
 
-                var div = document.createElement("div");
-                div.innerHTML = 
+                                <th class="table-name">PARTNER ID</th>
+                                <th class="table-name">MOBILE NUMBER</th>
+                                <th class="table-name">STATUS</th>
+                            </tr>
+                            <tr>
+                            <td class="table-details">${data.firstName + ' ' + data.lastName}</td>
+                            <td class="table-details">${data.loanContent}</td>
+                            <td>${data.mobile}</td>
+                            <td class="table-details">${data.visit}</td>
+                            </tr>
+                
+                        </table>
+                        <button class="call-btn"> <span>Call Partner</span> </button>
+                        </div>
+            
+                            `
+                        // details.appendChild(div);
+            
+            
+            
+                }
+            
+        
+        function showLocation(data) {
+            let details = document.getElementById("stops-container");
+            // for (let i = 0; i < data.length; i++) {
+                // let div = document.createElement("div");
+                details.innerHTML = 
                 `
-                <tr>
-                <td>${data[idx].firstName + ' ' + data[idx].lastName}</td>
-                <td>${data[idx].loanContent}</td>
-                <td>${data[idx].visit}</td>
-                <td></td>
-                </tr>
+                <div class="stop-1">
 
-                        
-                    `
-                details.appendChild(div);
-
-
-
-        }
-    })
-}
-
-
-
-initMap = () => {
-    var chennai = {lat: 13.0333388, lng: 80.2483276};
+                <table>
+                    <tr>
+                        <th class="table-name" style="padding-left: 20px; white-space: nowrap;">STOP NO.</th>
+                        <th class="table-name">LAT</th>
+                        <th class="table-name">LONG</th>
+                        <th class="table-name">TIME</th>
+                    </tr>
+                    <tr>
+                            <td class="table-details">${data.id}</td>
+                            <td class="table-details">${data["stop-1"]["lat"]}</td>
+                            <td class="table-details">${data["stop-1"]["long"]}</td>
+                            <td class="table-details">${data["stop-1"]["time"]}</td>
+                            <td></td>
+                            </tr>
+                </table>
+            </div>
+                    `  
+                    
+                // mainContainer.appendChild(div);
+            }
+            // }
+        
+        
+        initMap = () => {
+            let chennai = {lat: 13.0333388, lng: 80.2483276};
     map = new google.maps.Map(document.getElementById('map'), {
         center: chennai,
         zoom: 15,

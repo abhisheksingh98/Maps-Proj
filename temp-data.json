@@ -3,8 +3,10 @@
         "id": "1",
         "firstName": "Kannan",
         "lastName": "S",
-        "loanContent": "OMA00007 | 9988776655",
+        "loanContent": "OMA00007",
+        "mobile": "9988776655",
         "visit" : " VISIT OMV00035" ,
+        "active": "VISIT",
         "stop-1": {
             "lat": "13.0565342",
             "long": "80.965426",
@@ -31,43 +33,142 @@
         "id": "2",
         "firstName": "Sivasubramaniyan",
         "lastName": "K",
-        "loanContent": "OMA00005 | 9988776655",
-        "visit" : "VISIT OMV00033" 
+        "loanContent": "OMA00005",
+        "mobile": "9988776655",
+        "visit" : "VISIT OMV00033" ,
+        "stop-1": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-2": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-3": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-4": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        }
     },
     {
         "id": "3",
         "firstName": "Jayaram",
         "lastName": "S",
-        "loanContent": "OMA00011 | 9988776655",
-        "visit" : "IDLE" 
+        "loanContent": "OMA00011",
+        "mobile": "9988776655",
+        "visit" : "IDLE",
+        "stop-1": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-2": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-3": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-4": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        } 
     },
     {
         "id": "4",
         "firstName": "Saravanan",
         "lastName": "C",
-        "loanContent": "OMA00006 | 9988667788",
-        "visit" : "IDLE" 
+        "loanContent": "OMA00006",
+        "mobile": "9988667788",
+        "visit" : "IDLE",
+        "stop-1": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-2": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-3": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-4": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        } 
     },
     {
         "id": "5",
         "firstName": "Sreekesh",
         "lastName": "K",
-        "loanContent": "OMA00028 | 9911882233",
-        "visit" : "INACTIVE" 
+        "loanContent": "OMA00028",
+        "mobile": "9911882233",
+        "visit" : "INACTIVE" ,
+        "stop-1": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-2": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-3": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-4": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        }
     },
     {
         "id": "6",
         "firstName": "Rakesh",
         "lastName": "M",
-        "loanContent": "OMA00021 | 9977553311",
-        "visit" : "INACTIVE" 
-    },
-    {
-        "id": "7",
-        "firstName": "Parth",
-        "lastName": "Shah",
-        "loanContent": "OMA00031 | 9944553311",
-        "visit" : "INACTIVE" 
+        "loanContent": "OMA00021",
+        "mobile": "9977553311",
+
+        "visit" : "INACTIVE",
+        "stop-1": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-2": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-3": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        },
+        "stop-4": {
+            "lat": "13.0565342",
+            "long": "80.965426",
+            "time": "01:35 PM"
+        } 
     }
 ]
 

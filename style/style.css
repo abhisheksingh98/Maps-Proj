@@ -168,9 +168,12 @@ body {
   background: rgb(247, 245, 223);
 }
 
-.partner-container i {
+.icon {
   cursor: pointer;
   white-space: nowrap;
+  display: inline-block;
+  margin-top: 34px;
+  margin-left: 60px;
 }
 
 .partner-name {
@@ -241,13 +244,31 @@ body {
   box-sizing: border-box;
 }
 
+.table-details {
+  /* position: absolute; */
+  width: 150px;
+  height: 22px;
+  left: 333px;
+  top: 199px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 35px;
+  /* display: flex; */
+  align-items: center;
+
+  color: #000000;
+}
+
 .table-name {
   /* position: absolute; */
   width: 35px;
   height: 16px;
   left: 333px;
   top: 179px;
-  padding-left: 120px;
+  padding-right: 80px;
   padding-top: 10px;
   align-items: center;
   font-family: Nunito Sans;
