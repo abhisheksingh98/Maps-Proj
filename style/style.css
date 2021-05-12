@@ -1,0 +1,350 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 55vh;
+}
+
+.outer-container {
+  background: #f7f7f7;
+}
+
+.container {
+  position: relative;
+}
+
+.header {
+  /* position: absolute; */
+  width: 1440px;
+  height: 75px;
+  left: 0px;
+  top: 1px;
+
+  background: #ffffff;
+}
+
+.pin {
+  position: absolute;
+  width: 40px;
+  height: 54.67px;
+  left: 446px;
+  top: 481px;
+
+  /* Oro Gradient */
+
+  background: linear-gradient(165.33deg, #f9ca36 22.08%, #f8b830 87.9%);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  position: absolute;
+  width: 80px;
+  height: 35.14px;
+  left: 20px;
+  top: 21px;
+  cursor: pointer;
+  background: url(../assets/Oro\ Logo.png);
+}
+
+.back-arrow {
+  /* position: absolute; */
+  width: 15px;
+  height: 15px;
+  right: 1178px;
+  top: 167px;
+  /* display: inline-block; */
+
+  background: #404040;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.login-info {
+  position: absolute;
+  width: 208px;
+  height: 22px;
+  left: 1096px;
+  top: 27px;
+  white-space: nowrap;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.logout-btn {
+  position: absolute;
+  width: 96px;
+  height: 36px;
+  left: 1324px;
+  top: 20px;
+  cursor: pointer;
+  background: #cf2121;
+  border-radius: 4px;
+}
+
+.logout-btn span {
+  /* position: absolute; */
+  width: 47px;
+  height: 19px;
+  left: 1349px;
+  top: 28px;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.search {
+  /* position: absolute; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 267px;
+  height: 44px;
+  left: 0px;
+  top: 75px;
+  padding-left: 13px;
+  background: #f0f0f0;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.7;
+  border: 1px rgb(110, 107, 107);
+  text-decoration: none;
+  outline: none;
+}
+
+.search-panel {
+  display: inline-block;
+}
+
+.search-panel i {
+  position: absolute;
+  margin: 15px;
+}
+
+.partner-details {
+  position: absolute;
+  white-space: nowrap;
+  width: 1078px;
+  height: 82px;
+  left: 339px;
+  top: 159px;
+
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+
+.partner-container {
+  /* position: absolute; */
+  width: 265px;
+  height: 111px;
+  left: 0px;
+  top: 120px;
+  border: 1px solid rgb(209, 207, 207);
+  display: inline-block;
+  padding-left: 15px;
+  padding-top: 10px;
+  background: #ffffff;
+  /* cursor: pointer; */
+}
+.partner-container:hover {
+  background: rgb(247, 245, 223);
+}
+
+.partner-container i {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.partner-name {
+  /* position: absolute; */
+  width: 71px;
+  height: 22px;
+  left: 20px;
+  top: 143px;
+  cursor: pointer;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.partner-visit {
+  /* position: absolute; */
+  width: 101px;
+  height: 16px;
+  left: 32px;
+  top: 191px;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #000000;
+}
+.loan-info {
+  /* position: absolute; */
+  width: 147px;
+  height: 16px;
+  left: 20px;
+  top: 170px;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #000000;
+
+  opacity: 0.6;
+}
+
+/* .loan-info span {
+  line-height: 16px;
+  white-space: nowrap;
+  display: inline;
+  float: right;
+} */
+
+.partners-details {
+  position: absolute;
+  width: 1078px;
+  height: 82px;
+  left: 318px;
+  top: 159px;
+
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+
+.table-name {
+  /* position: absolute; */
+  width: 35px;
+  height: 16px;
+  left: 333px;
+  top: 179px;
+  padding-left: 120px;
+  padding-top: 10px;
+  align-items: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* display: flex; */
+
+  color: #575757;
+}
+
+.call-btn {
+  position: fixed;
+  width: 86px;
+  height: 30px;
+  right: 184px;
+  top: 185px;
+  cursor: pointer;
+  background: #ffc351;
+  border-radius: 20px;
+}
+
+.call-btn span {
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  left: calc(50% - 68px / 2 - 0.5px);
+  top: calc(50% - 16px / 2 + 0.5px);
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.main {
+  /* position: absolute; */
+  border: 1px solid grey;
+  background-color: #817d7d;
+  white-space: nowrap;
+}
+
+.map-container {
+  position: absolute;
+  width: 1078px;
+  height: 438px;
+  left: 339px;
+  top: 271px;
+}
+
+.stop-1 {
+  position: absolute;
+  width: 536px;
+  height: 59px;
+  left: 330px;
+  top: 727px;
+
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+
+.main-name {
+  position: absolute;
+  width: 144px;
+  height: 22px;
+  left: 339px;
+  top: 125px;
+  white-space: nowrap;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 88px;
+  color: #333333;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 100px;
+}
