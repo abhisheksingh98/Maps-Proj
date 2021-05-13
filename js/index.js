@@ -1,4 +1,4 @@
-let map;
+var map;
 let markers = [];
 let infoWindow;
 let locationSelect;
@@ -34,9 +34,9 @@ for (let i = 0; i < data.length; i++) {
         <p class="partner-visit">${data[i].visit}</p>
         </div>
 
-        <div>
-        <i class="fas fa-chevron-circle-right icon"></i>
-        </div>
+        <i class="fas fa-chevron-circle-right fa-lg icon"></i>
+        
+    
 
         </div>    
         `
@@ -70,7 +70,7 @@ function showPartnerDetails(data){
                             <tr>
                             <td class="table-details">${data.firstName + ' ' + data.lastName}</td>
                             <td class="table-details">${data.loanContent}</td>
-                            <td>${data.mobile}</td>
+                            <td class="table-details">${data.mobile}</td>
                             <td class="table-details">${data.visit}</td>
                             </tr>
                 
@@ -96,7 +96,7 @@ function showPartnerDetails(data){
 
                 <table>
                     <tr>
-                        <th class="table-name" style="padding-left: 20px; white-space: nowrap;">STOP NO.</th>
+                        <th class="table-name" style="padding-left: 2.0rem; white-space: nowrap;">STOP NO.</th>
                         <th class="table-name">LAT</th>
                         <th class="table-name">LONG</th>
                         <th class="table-name">TIME</th>
@@ -128,5 +128,21 @@ function showPartnerDetails(data){
         streetViewControl: false
     });
     infoWindow = new google.maps.InfoWindow
+    createMarker();
 }
 
+const createMarker = () => {
+    let icon = {
+        url: "../assets/Pin.png", // url
+        scaledSize: new google.maps.Size(35, 50), // scaled size
+        origin: new google.maps.Point(0,0), // origin
+        anchor: new google.maps.Point(0, 0) // anchor
+    };
+    let marker = new google.maps.Marker({
+        position: {lat:13.0333388,
+        lng: 80.2483276 },
+        map : map,
+        icon: icon
+    })
+   
+}
