@@ -1,3 +1,3 @@
 ## ORO Partner Locator
 
-![Screenshot](../assets/Screenshot.png)
+![Screenshot](assets/Screenshot.png)
