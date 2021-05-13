@@ -24,7 +24,7 @@ for (let i = 0; i < data.length; i++) {
     let div = document.createElement("div");
     div.innerHTML = 
     `
-        <div class="partner-container" id = ${temp.id} style = "display:flex;">
+        <div class="partner-container" id = ${temp.id} tabindex= ${temp.id}  style = "display:flex;">
 
         <div>
         <span class="partner-name">${data[i].firstName + ' ' + data[i].lastName}</span>
