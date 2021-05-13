@@ -255,7 +255,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 35px;
+  padding-left: 25px;
   /* display: flex; */
   align-items: center;
 
@@ -282,14 +282,15 @@ body {
 }
 
 .call-btn {
-  position: fixed;
+  position: absolute;
   width: 86px;
   height: 30px;
-  right: 184px;
-  top: 185px;
+  right: 84px;
+  top: 25px;
   cursor: pointer;
   background: #ffc351;
   border-radius: 20px;
+  z-index: 99;
 }
 
 .call-btn span {

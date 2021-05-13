@@ -63,7 +63,7 @@ function showPartnerDetails(data){
                             <tr>
                                 <th class="table-name">NAME</th>
 
-                                <th class="table-name">PARTNER ID</th>
+                                <th class="table-name" >PARTNER ID</th>
                                 <th class="table-name">MOBILE NUMBER</th>
                                 <th class="table-name">STATUS</th>
                             </tr>
